@@ -308,3 +308,38 @@ nav img{
     border-radius: 100px;
     padding: 12px;
 }
+footer{
+    height: 412px;
+    background-image: url(..//images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.ft-container{
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.ft-icon{
+display: flex;
+gap: 60px;
+justify-content: center;
+margin: 30px 0;
+}
+.icon-box{
+display: flex;
+align-items: center;
+gap:10px;
+color: #ffff;
+font-size: 16px;
+font-weight: 800px;  
+}
+.icon-box p{
+    color: #ffffff; 
+    font-size: 16px;
+    font-weight: 400px;
+}
