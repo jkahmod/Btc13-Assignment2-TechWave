@@ -2,8 +2,8 @@
     padding: 0;
     margin:0;
 }
-/* ===== font-family: Inter ===== */
-.inter{
+
+.inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
@@ -258,13 +258,26 @@ nav img{
     margin: 0 auto;
     display: flex;
     gap:30px; 
+    justify-content: center;
 }
 .featured-card{
+    width: 350px;
     background-color: #351165;
     border: none;
     border-radius:30px;
+    transition: all 1s ease;
+}
+.featured-card:hover{
+    transform: scaleY(1.1);
+    
+}
+
+.Episodes-img img {
+    width: 100%;
+
 }
 .card-content{
+    width: 350px;
     padding: 20px;
 }
 .prodcast img{
@@ -275,6 +288,7 @@ nav img{
     position:absolute;
     margin-top: -150px;
     margin-left: 150px;
+    
 
 }
 .time{
@@ -296,8 +310,8 @@ nav img{
     padding: 100px 0 ;
 }
 .author-container{
-    width: 75%;
-    max-width: 1200px;
+    width: 71%;
+    max-width: 1140px;
     margin: 0 auto;     
 }
 .author-card{
@@ -329,6 +343,14 @@ nav img{
     border: 1px solid #533C72;
     border-radius: 100px;
     padding: 12px;
+    transition: all 0.5s ease-in;
+}
+.social-icon img:hover {
+    background-color: #160125;
+    border-radius: 10px;
+    transform: rotate(60deg);
+    cursor: pointer;
+    
 }
 
 /* ===== FOOTER SECTION ===== */
@@ -360,6 +382,12 @@ footer{
     color: #ffff;
     font-size: 16px;
     font-weight: 800px;  
+    transition: all 1s ease;
+}
+    .icon-box:hover{
+        transform:scale(1.2);
+        cursor: pointer;
+     
 }
     .icon-box p{
     color: #ffffff; 
@@ -375,6 +403,7 @@ footer{
 /* <========== All Device Responsive design ============> */
 
 @media screen and (max-width:576px){
+
     .btn{
         color: #ffff;
         font-size: 14px;
@@ -427,12 +456,7 @@ footer{
         text-align: center;
         justify-content: center;
     }
-    .badge{
-        position: absolute;
-        top:28%;
-        left:77% ;
-        transform: translate(-100%,-100%) ;
-    }
+  
     .hero-container h1{
         color: #ffff;
         font-size: 60px;
@@ -440,12 +464,19 @@ footer{
         line-height:70px;
         margin: 20px 0;
     }
-    .hero-img .img1{
-        width:220px;
+    .badge{
+    position: absolute;
+    top:23%;
+    left:71% ;
+    transform: translate(-100%,-100%) ;
     }
+    .hero-img .img1{
+        width:200px;
+    }
+    
     .hero-img .img2{
         position: absolute;
-        top:38%;
+        top:37%;
         left:50% ;
         transform: translate(-50%,-100%);
         width:85px;
@@ -521,9 +552,15 @@ footer{
         background-color: #1A0B2E;
         padding: 20px 0;
     }
+    .featured-card{
+    width:530px;
+    padding: 0;
+    justify-content: center;
+   
 
+    }
     .featured-box{
-        width: 92%;
+        width:530px;
         margin: 0 auto;
         display: grid;
         gap:30px; 
@@ -540,7 +577,7 @@ footer{
         text-align: center;
         position:absolute;
         margin-top: -180px;
-        margin-left: 250px;               
+        margin-left: 220px;               
     }
 
 /* ==== MEET THE HOST - CHALENG PART RESPONSIVE DESIGN ==== */
@@ -585,7 +622,7 @@ footer{
 
 /* ==== FOOTER SECTION RESPONSIVE DESIGN ===== */
 
-    #footer{
+    footer{
         height: 200px;
         background-image: url(..//images/footer-bg.png);
         background-position: center;
@@ -609,6 +646,67 @@ footer{
         gap: 20px;
     }
        
-    
     }
+
+ /*---------------- Large Device: above----------------------
+ ----------------   Mobile Responsive Design
+  - Breakpoint: min-width: 992px ------------------------- */ 
+
+    @media screen and (min-width:992px){
+       
+        nav{
+            width:92%;
+            margin:0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+        }
+         #hero-bnr{
+            height: 600px;
+            padding-bottom: 50px;
+         }
+        .hero-img .img1{
+        width:300px;
+        }
+        .hero-img .img2{
+            position: absolute;
+            top:48%;
+            left:50% ;
+            transform: translate(-50%,-100%);
+            width:100px;
+        }
+        .badge{
+        position: absolute;
+        top:30%;
+        left:59% ;
+        transform: translate(-100%,-100%) ;
+        }
+ /* ===== WHY CHOOSE TECHWAVE ====  */
+        #services{
+            /* background-color: #1A0B2E;
+            padding: 50px 0; */
+            padding: 0 ;
+        }
+        .services-container{
+            width:92%;
+            padding:20px;
+        }  
+        #featured{
+        background-color: #1A0B2E;
+        }
+        .featured-box{
+            width:92%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;      
+        }
+        #author{
+            background-color: #1A0B2E;
+            padding: 100px 0 ;
+        }
+        .author-container{
+            width: 82%;
+        }
+ }
 
