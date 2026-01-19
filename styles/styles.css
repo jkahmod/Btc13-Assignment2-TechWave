@@ -2,13 +2,11 @@
     padding: 0;
     margin:0;
 }
-
 /* ===== font-family: Inter ===== */
 .inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-/* ===== font-family: Inter ===== */
 
 /* ========Sheared Design========== */
 .btn{
@@ -59,8 +57,8 @@
     transform:scale(1.1);
     cursor: pointer;   
 }
-/* ====heading ===== */
 
+/* ====heading ===== */
 .heading {
     color:#fff;
     font-size: 48px;
@@ -78,7 +76,9 @@
     text-align: center;
     margin-bottom: 30px;
 }
-/* ======Sheared Design==== */
+/* ======Sheared Design - END ==== */
+
+/* ===== MAIN HEADER =====  */
 
 header{
     background-color: #1A0B2E;
@@ -108,8 +108,9 @@ nav img{
     text-decoration: none;
     color: aliceblue;
     display: flex;
-
 }
+/* ===== HERO SECTION BANNER ======== */
+
 #hero-bnr{
     background-image: url(..//images/hero-bg.png);
     background-position: center;
@@ -120,8 +121,7 @@ nav img{
     justify-content: center;
     padding:100px;
 }
-.hero-container{
-    
+.hero-container{   
     width: 550px;
     margin: 0 auto;
     text-align: center;
@@ -157,6 +157,9 @@ nav img{
     line-height:70px;
     margin: 20px 0;
 }
+
+/* ===== ABOUT SECTION ====== */
+
 #about{
     background-color: #1A0B2E;
     padding-top: 50px;
@@ -180,6 +183,9 @@ nav img{
     margin-bottom: 16px;
     text-align: center;  
 }
+
+/* ====== SERVICES SECTION ======  */
+
 #services{
     background-color: #1A0B2E;
     padding: 120px;
@@ -239,6 +245,9 @@ nav img{
     font-size: 14px;
     line-height: 20px;
 }
+
+/* ==== Featured Episodes ====== */
+
 #featured{
     background-color: #1A0B2E;
     padding: 100px 0;
@@ -258,6 +267,16 @@ nav img{
 .card-content{
     padding: 20px;
 }
+.prodcast img{
+    width:70px ;
+}
+.prodcast{
+    text-align: center;
+    position:absolute;
+    margin-top: -150px;
+    margin-left: 150px;
+
+}
 .time{
     display: flex;
     align-items: center;
@@ -269,6 +288,9 @@ nav img{
     font-size: 16px;
     font-weight: 400px;
 }
+
+/* ===== Meet the Host ===== */
+
 #author{
     background-color: #1A0B2E;
     padding: 100px 0 ;
@@ -308,13 +330,15 @@ nav img{
     border-radius: 100px;
     padding: 12px;
 }
-footer{
+
+/* ===== FOOTER SECTION ===== */
+
+#footer{
     height: 412px;
     background-image: url(..//images/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .ft-container{
     width: 71%;
@@ -323,23 +347,268 @@ footer{
     text-align: center;
     padding-top: 120px;
 }
-
 .ft-icon{
-display: flex;
-gap: 60px;
-justify-content: center;
-margin: 30px 0;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin: 30px 0;
 }
-.icon-box{
-display: flex;
-align-items: center;
-gap:10px;
-color: #ffff;
-font-size: 16px;
-font-weight: 800px;  
+    .icon-box{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 800px;  
 }
-.icon-box p{
+    .icon-box p{
     color: #ffffff; 
     font-size: 16px;
     font-weight: 400px;
 }
+
+/* <========== All Device Responsive design ============> */
+
+/* ----------------   Mobile Responsive Design
+  - Breakpoint: max-width 575px ------------------------- */
+
+/* <========== All Device Responsive design ============> */
+
+@media screen and (max-width:576px){
+    .btn{
+        color: #ffff;
+        font-size: 14px;
+        padding: 15px 30px;
+        border-radius: 30px;
+        margin-left: 10px;
+    }
+    .btn-2{
+        color: #00FF88;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .heading {
+        color:#fff;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 700px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+/* ===== P - text===== */
+
+    .text{
+        color: #ffff;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+/* ======Sheared Design==== */
+
+/* ====== HERO SECTION MAIN BANNER ====== */
+    #hero-bnr{
+        background-image: url(..//images/hero-bg.png);
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        padding: 30px 10px;
+    }
+    .hr-btn{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .hero-container{
+        width:100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .badge{
+        position: absolute;
+        top:28%;
+        left:77% ;
+        transform: translate(-100%,-100%) ;
+    }
+    .hero-container h1{
+        color: #ffff;
+        font-size: 60px;
+        font-weight: 800;
+        line-height:70px;
+        margin: 20px 0;
+    }
+    .hero-img .img1{
+        width:220px;
+    }
+    .hero-img .img2{
+        position: absolute;
+        top:38%;
+        left:50% ;
+        transform: translate(-50%,-100%);
+        width:85px;
+    }
+    .hero-container h1{
+        color: #ffff;
+        font-size: 40px;
+        font-weight: 800;
+        line-height:70px;
+        margin: 20px 0;
+    }
+
+/* ===== ABOUT SECTION ===== */
+
+    #about{
+        background-color: #1A0B2E;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .about-container{
+        width:92%;
+        max-width: 1140px;
+        margin: 0 auto;  
+        text-align: center; 
+        padding: 20px; 
+    }
+    .about-info {
+        width: 92%;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .about-info h1 {
+        color: #00FF88;
+        font-size: 40px;
+    }
+
+/* <!-- ===== WHY CHOOSE TECHWAVE ==== --> */
+
+    #services{
+        background-color: #1A0B2E;
+        padding: 50px 0;
+    }
+    .services-container{
+        width:92%;
+        margin: 0 auto;  
+    }
+    .services-info{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .box1{
+        
+        background-color: #351165;
+        padding: 20px 20px ;
+        border: none;
+        border-radius:20px;
+    }
+    .box2{
+    width: 100%;
+        background-color: #351165;
+        padding:20px ;
+        border: none;
+        border-radius:20px;
+    }
+
+/* ====  FEATURED EPISODES ==== */
+
+    #featured{
+        background-color: #1A0B2E;
+        padding: 20px 0;
+    }
+
+    .featured-box{
+        width: 92%;
+        margin: 0 auto;
+        display: grid;
+        gap:30px; 
+    }
+    .Episodes-img img{
+        width:100%;
+        height: auto;
+    }
+    .prodcast img{
+        width:70px;
+        
+    }
+    .prodcast{
+        text-align: center;
+        position:absolute;
+        margin-top: -180px;
+        margin-left: 250px;               
+    }
+
+/* ==== MEET THE HOST - CHALENG PART RESPONSIVE DESIGN ==== */
+
+    #author{
+        background-color: #1A0B2E;
+        padding: 50px 0 ;
+    }
+    .author-container{
+        width: 92%;
+        margin: 0 auto;     
+    }
+    .author-card{
+    
+        display: grid; 
+        gap:40px;
+        background-color: #351165;
+        padding: 40px;
+        text-align: center;
+    
+    }
+    .author-card h3{
+        font-size: 32px;
+        line-height: 45px;
+        color: #ffff;
+        font-weight: 700px;
+        margin-bottom: 16px;
+    }
+
+    .social-icon{
+        display: flex;
+        justify-content: center;
+        
+        margin-top: 16px;
+    }
+    .social-icon img {
+        width: 17px;
+        border: 1px solid #533C72;
+        border-radius: 100px;
+        padding: 10px;
+    }
+
+/* ==== FOOTER SECTION RESPONSIVE DESIGN ===== */
+
+    #footer{
+        height: 200px;
+        background-image: url(..//images/footer-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+    }
+    .ft-container{
+        width: 92%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5px;         
+    }
+    .ft-container .footer-logo{
+        width: 250px;
+        padding-top: 20px;         
+    }
+    
+    .ft-icon{
+        display: flex;
+        gap: 20px;
+    }
+       
+    
+    }
+
